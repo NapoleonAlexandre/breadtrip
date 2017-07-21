@@ -66,15 +66,15 @@ firefoxProfile.set_preference('permissions.default.image', 2 );
 firefoxProfile.set_preference('dom.ipc.plugins.enabled.libflashplayer.so', 'false');
 
 ## 创建浏览器对象
-browser = webdriver.Firefox(firefoxProfile, executable_path="/Users/ychern/Desktop/breadtrip_research_in_FuDanUniversity-master/geckodriver");
+browser = webdriver.Firefox(firefoxProfile, executable_path="/Users/ychern/version-control/breadtrip/geckodriver");
 
-## 导航到面包旅行昭通
-browser.get('http://web.breadtrip.com/scenic/3/61123/trip/#nav');
+## 导航到面包旅行安庆
+browser.get('http://web.breadtrip.com/scenic/3/30308/trip/#nav');
 
 print("等待网页加载完毕......");
 
-## 检查标题是否为‘昭通-目的地-面包旅行’
-assert '昭通-目的地-面包旅行' in browser.title;
+## 检查标题是否为‘安庆-目的地-面包旅行’
+assert '安庆-目的地-面包旅行' in browser.title;
 
 ## 创建循环直到加载所有旅行信息
 while True:
