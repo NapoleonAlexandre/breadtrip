@@ -1,0 +1,3 @@
+# breadtrip_research_in_FuDanUniversity
+baiduApi.py:将经纬度自动注入HTML文件；baiduHotMap_copy.html显示经纬度的热力图；baiduMap_copy.html显示经纬度的点阵图；
+breadtrip.py：爬虫代码。利用selenium webdriver。爬云南省昭通市的所有游记47篇。爬虫运行时间：2017年7月10号11：14-2017年7月10号13：14
